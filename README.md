@@ -1,3 +1,7 @@
+# Admin 1.0con Authentication integrada
+Base para iniciar proyctos de administración.
+Authentication con LARAVEL PASSPORT Personal Access Token.
+
 # admin-1.0
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
