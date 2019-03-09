@@ -1,9 +1,12 @@
 <div class="container-fluid" >
+  <div class="access row justify-content-md-rigth align-items-start">
+    <button [routerLink]="['/login']" routerLinkActive="router-link-active"  mat-button>Acceder</button>
+  </div>
   <div class= "row justify-content-md-center align-items-center">
     <mat-card class="col col-md-4">
-      <div class="row justify-content-md-center " >
-        <h2>Formulario de Registro</h2>
-      </div>
+      <mat-card-header class="justify-content-md-center">
+          <mat-card-title>Registrese</mat-card-title>
+      </mat-card-header>
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="row">
           <mat-form-field appearance="outline" appearance="outline">
