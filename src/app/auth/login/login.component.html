@@ -1,0 +1,36 @@
+<div class="container-fluid">
+
+  <mat-card class="">
+    <!-- <mat-card-header>
+      <mat-card-title>
+        <span>Login</span>
+      </mat-card-title>
+    </mat-card-header> --> 
+    <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-card-content>
+    
+    
+    
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Correo electrónico</mat-label>
+          <input matInput placeholder="Email" formControlName="email">
+          <!-- <mat-error *ngIf="form.controls.email.valid">OK</mat-error>
+          <mat-error *ngIf="form.controls.email.errors.email">Email inválido</mat-error>
+          <mat-error *ngIf="form.controls.email.errors.required">Campo requerido</mat-error> -->
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput placeholder="Contraseña" type="password" formControlName="password">
+            <!-- <mat-error *ngIf="form.controls.password.errors.required">Campo requerido</mat-error> -->
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary">Login</button>
+    </mat-card-actions>
+    </form>
+    </mat-card>
+</div>

@@ -1,0 +1,38 @@
+<div class="container-fluid" >
+  <div class= "row justify-content-md-center align-items-center">
+    <mat-card class="col col-md-4">
+      <div class="row justify-content-md-center " >
+        <h2>Formulario de Registro</h2>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <mat-form-field appearance="outline" appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name" placeholder="Nombre">
+          </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+              <mat-label>Correo electrónico</mat-label>
+              <input matInput formControlName="email" placeholder="Email">
+            </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput formControlName="password" placeholder="Contraseña">
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Confirmar contraseña</mat-label>
+            <input matInput formControlName="password_confirmation" placeholder="Confirmar contraseña">
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <button mat-flat-button color="primary" >Enviar</button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>
