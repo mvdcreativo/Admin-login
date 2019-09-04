@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  urlApi: 'http://admin-login.test/api/'
+  urlApi: 'http://api-laravelauthpassport.test/api/'
 };
 
 /*
